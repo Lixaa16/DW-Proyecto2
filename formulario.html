@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnos</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div class="FondoR">
+        <header class="header">
+            <img class="iconoMenu" src="./assets/fotos/icono.png" alt="">
+            <h1 class="h1">Consultorios Odontologicos Sonrisas</h1>
+        </header>
+    </div>
+    <div class="FondoG">
+        <nav class="menuLateral">
+            <a href="index.html">Inicio</a>
+            <hr>
+            <a href="nosotros.html">Nosotros</a>
+            <hr>
+            <a href="formulario.html">Turnos</a>
+        </nav>       
+    </div>
+    <div class="container">
+        <form action="/datos.html">
+            <div class="row">
+                <div class="col-25">
+                    <label for="nombre">Nombre</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="Apellido">Apellido</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="apellido" name="Apellido" placeholder="Apellido">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="DNI">DNI</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="DNI" name="DNI" placeholder="DNI">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="Medico">Medico</label>
+                </div>
+                <div class="col-75">
+                    <select id="Medico" name="Medico">
+                        <option value="Dra1">Dra. Dolores Delano</option>
+                        <option value="Dra2">Dra. Elsa Cadiente</option>
+                        <option value="Dr">Dr. Alex Cremento</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Fecha</label>
+                </div>
+                <div class="gridForm">
+                    <table class="dias">
+                        <tr>
+                            <td class="rojo">1</td>
+                            <td class="rojo">2</td>
+                            <td class="rojo">3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td class="rojo">11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td class="rojo">15</td>
+                            <td class="rojo">16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td class="rojo">20</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td class="rojo">22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+            <div class="row">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+
+    
+</body>
+</html>

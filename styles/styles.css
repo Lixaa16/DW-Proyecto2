@@ -1,0 +1,284 @@
+body {
+    background-image: url(../assets/fotoss/dientito.png);
+    background-repeat: repeat;
+}
+.h1 {
+    display: flexbox;
+    background-color: rgba(148, 148, 148, 0.678);
+    color: rgb(15, 68, 35);
+    text-align: center;
+    text-decoration: underline;
+    font-family: cursive;
+}
+/* GRIDS */
+.contPadr {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "head head"
+    "menu main"
+    "menu main"
+    "foot foot"; 
+    grid-template-columns: 1fr 5fr ;
+    grid-template-rows: 2fr repeat(2, 4fr) 1fr;
+    column-gap: 2vh;
+    row-gap: 2vh;
+}
+
+.FondoR {
+    grid-area: head;
+    background-image: url(../assets/fotoss/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    border-style: double;
+    border-color: black;
+    border-width: 1vh;
+    ;
+}
+.FondoG {
+    grid-area: menu;
+    background-color: cornflowerblue;
+    border-style: double;
+    border-color: black;
+    border-width: 1vh;
+}
+.FondoB {
+    grid-area: main;
+    background-color: cornflowerblue;
+    border-style: double;
+    border-color: black;
+    border-width: 1vh;
+}
+.FondoP {
+    grid-area: foot;
+    background-color: cornflowerblue;
+    border-style: double;
+    border-color: black;
+    border-width: 1vh;
+    text-align: center;
+}
+
+    /* CLASES GENERALES */
+
+/* menu lateral */
+.menuLateral {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    column-gap: 20%;
+    align-content: flex-start;
+    justify-content: space-around;
+    text-align: center;
+
+
+
+}
+.menuLateral a {
+    color: rgb(0, 0, 0);
+    
+}
+.menuLateral a:hover {
+    color: rgb(92, 151, 14);
+}
+
+.menuLateral hr {
+    width: 90%;
+    color: black;
+    border-width: 0.2vh;
+    border-color: black;
+    border-style: dotted;
+    background-color: black;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: auto;
+    justify-content: space-evenly;
+    height: 70%;
+    position: relative;
+    
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    text-align: center;
+    width: 23.3%;
+    border-width: 2px;
+    border-style: double;
+    border-color: black;
+    border-collapse: collapse;
+    box-shadow: 10px;
+    background-color: rgba(100, 86, 114, 0.781);
+    padding: 2%;
+    padding-bottom: 8%;
+    animation: ease-in;
+    }  
+.cardName {
+    background-color: rgb(113, 83, 134);
+    margin: 0;
+}
+.cardPhoto {
+   width: 90%;
+   height: 90%;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.footerImg {
+    width: 10%;
+    height: 10%;
+    padding-top: 5% ;
+}
+.footerCon {
+    text-align: center;
+    color: green;
+}
+.footerWsp {
+    display: flex;
+    flex-flow: nowrap row;
+    order: 1;
+    text-decoration: underline;
+    width: 33.3%;
+}
+.footerTel {
+    display: flex;
+    order: 2;
+    text-decoration: underline;
+    width: 33.3%;
+}
+.footerImgT {
+    width: 10%;
+    height: 10%;
+    padding-top: 7%;
+
+}
+.footerDir {
+    display: flex;
+    order: 3;
+    width: 33.3%;
+}
+
+/* FORMULARIO */
+input[type=text],texta select, rea {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: white;
+    padding-left: 10%;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+input[type=submit] {
+    background-color: rgb(0, 0, 0);
+    color: rgb(135, 163, 32);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #5a5a5a;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #7a5277e5;
+    padding: 20px;
+    width: 90%;
+    margin-left: 3%;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.gridForm {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr) ;
+    row-gap: 4%;
+    height: 30vh;
+    width: 100%;
+}
+.gridForm td {
+        text-align: center;
+        padding: .2em .5em;
+        border: 1px solid black;
+        text-align: left;
+  font-size: .8em;
+  padding-bottom: 3em;
+  padding-right: 3em;
+}
+.gridForm td:hover { 
+cursor: pointer;
+font-size: 1.6em;
+text-align: center;
+padding: 0;
+}
+
+.rojo {
+    background-color: rgba(134, 2, 2, 0.829);
+}
+@media screen and (max-width: 640px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    .contPadr {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+    }
+    .cards {
+        flex-direction: column;
+        overflow: auto
+    }
+    .card {
+        width: 100%;
+        overflow: auto;
+    }
+    .gridForm {
+        overflow: auto;
+        
+    }
+  }  
+
+
