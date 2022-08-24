@@ -39,7 +39,7 @@ body {
 }
 .FondoG {
     grid-area: menu;
-    background-color: cornflowerblue;
+    background-color: rgba(207, 207, 207, 0.568);
     border-style: double;
     border-color: black;
     border-width: 1vh;
